@@ -1,0 +1,21 @@
+{
+  "name": "vending-machine-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
+  },
+  "author": "Kate Sickora",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}
