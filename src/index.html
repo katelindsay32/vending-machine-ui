@@ -6,13 +6,56 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Hello, world!</title>
+    <style>
+        .under {
+            position: relative;
+            left: 10px;
+            z-index: -1;
+        }
+
+        .over {
+            position: relative;
+            left: -80px;
+            top: 10px;
+            z-index: -1;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            const btn = document.getElementById('dollar');
+            console.log("found obj " + btn);
+            function logMessage() {
+                console.log("hi");
+                InsertDollar();
+            };
+
+            btn.onclick = logMessage;
+        };
+
+    </script>
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
-    <h2>Hiiiiiii!</h2>
-    <h1><%= htmlWebpackPlugin.options.title %></h1>
-    <div id="app">
+    <h1>Vending Machine</h1>
+    <h3>Please choose the tender you'd like to enter"</h3>
+
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <input type="image"
+                        src="https://i.pinimg.com/originals/c4/2d/e7/c42de75d216f2c3b3706cd136478009e.jpg" width="200"
+                        id="dollar"></td>
+                <td><img src="https://live.staticflickr.com/2223/1491049101_15bcd94c69.jpg" width="75" /></td>
+                <td><img src="https://live.staticflickr.com/2258/1491049395_cff40343ed.jpg" width="40" /></td>
+                <td><img src="https://live.staticflickr.com/227/1491049183_4fe2ede120.jpg" width="60" /></td>
+                <td><img src="http://www.picturesof.net/_images_300/Realistic_Canadian_Quarter_Royalty_Free_Clipart_Picture_090104-223055-992048.jpg"
+                        width="75" class="under" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/ProhibitionSign2.svg/1200px-ProhibitionSign2.svg.png"
+                        width="95" class="over" /></td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>

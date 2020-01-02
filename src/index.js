@@ -1,1 +1,6 @@
-console.log('Hello ever running Node.js project.');
+
+
+function InsertDollar() {
+    console.log("Quarter inserted!");
+}
+export default InsertDollar;
