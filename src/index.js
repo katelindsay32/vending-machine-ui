@@ -1,4 +1,5 @@
 import CoinService from './coinService';
+import './style.css';
 
 window.onload = function () {
     var coinService = new CoinService();
