@@ -1,8 +1,7 @@
 ### vending-machine-ui
 
+Following this tutorial: [How to set up a modern JavaScript project](https://www.robinwieruch.de/javascript-project-setup-tutorial)
 
-* Uses vanilla ES6 javascript
-* Built with webpack
 
 ### To run
 `npm build`
