@@ -10,3 +10,7 @@
     top: 10px;
     z-index: -1;
 }
+
+.example{
+    background-color: gray;
+}
