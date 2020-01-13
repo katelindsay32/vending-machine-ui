@@ -1,17 +1,14 @@
 import CoinService from './coinService';
 import './style.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 window.onload = function () {
     var coinService = new CoinService();
 
-    this.console.log("hi");
     const dollarBtn = document.getElementById('dollar');
     dollarBtn.onclick = coinService.InsertDollar;
 
     const quarterBtn = document.getElementById('quarter');
     quarterBtn.onclick = coinService.InsertQuarter;
-
-    console.log("quarter" + quarterBtn);
 
     const dimeBtn = document.getElementById('dime');
     dimeBtn.onclick = coinService.InsertDime;
@@ -22,6 +19,3 @@ window.onload = function () {
     const canadianQuarterBtn = document.getElementById('canadian');
     canadianQuarterBtn.onclick = coinService.InsertCanadianQuarter;
 };
-
-
-
